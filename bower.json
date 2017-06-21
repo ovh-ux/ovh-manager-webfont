@@ -1,0 +1,12 @@
+{
+    "name": "ovh-manager-webfont",
+    "description": "Managers front",
+    "version": "1.0.0",
+    "main": "./dist/less/ovh-font.less",
+    "ignore": [
+        "bower_components",
+        "node_modules",
+        "Gruntfile.js",
+        ".editorconfig"
+    ]
+}

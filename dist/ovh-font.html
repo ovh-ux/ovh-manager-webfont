@@ -1,0 +1,1026 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>ovh-font</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/ovh-font.css">
+        <link rel="stylesheet" href="ovh-font-showcase.css">
+        <style>
+        body {
+            background-color:#2E2633;
+            color:#999292;
+        }
+        h1 {
+            padding: 22px 0;
+        }
+
+        .ovh-font {
+            font-size: 2.3rem;
+        }
+
+        .icons-container {
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            align-items: center;
+        }
+
+        .icons-items-default {
+            padding: 10px;
+            border: 1px solid #eee;
+            display: block;
+            float: left;
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            margin: 5px;
+            transition: all 0.3s ease-out;
+        }
+
+        .icons-items-default i {
+            display: block;
+            text-align: center;
+            padding-top: 20%;
+            color: #FFF;
+            opacity: 1;
+            transition: all 0.3s ease-out;
+        }
+
+        .icons-items-default small {
+            display: block;
+            text-align: center;
+            color: #999292;
+            padding-top: 4px;
+            transition: all;
+            transition: all 0.3s ease-out;
+        }
+
+        .selected,.icons-items-default:hover {
+            cursor: pointer;
+            box-shadow: #ccc 0px 0px 34px;
+            transition: all 0.3s ease-out;
+            transform: scale(1.1);
+        }
+
+        .selected {
+            background-color: #314d77;
+        }
+
+        .icons-items-default:hover small {
+            transition: all 0.3s ease-out;
+            opacity: 0;
+        }
+
+        .icons-items-default:hover i {
+            transition: all 0.3s ease-out;
+            padding-top: 0%;
+            font-size: 6rem;
+        }
+
+        input#filter {
+            margin-bottom: 20px;
+            padding-left: 5px;
+            color: #333;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>ovh-font</h1>
+            <input type="text" id="filter" placeholder="filter">
+            <div class="row">
+                <div id="icons" class="icons-container">
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="activer">
+                        <i class="ovh-font ovh-font-activer"></i>
+                        <small>ovh-font-activer</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="add-circle">
+                        <i class="ovh-font ovh-font-add-circle"></i>
+                        <small>ovh-font-add-circle</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="add-credit">
+                        <i class="ovh-font ovh-font-add-credit"></i>
+                        <small>ovh-font-add-credit</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="affinity">
+                        <i class="ovh-font ovh-font-affinity"></i>
+                        <small>ovh-font-affinity</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="ajouter">
+                        <i class="ovh-font ovh-font-ajouter"></i>
+                        <small>ovh-font-ajouter</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="alarm">
+                        <i class="ovh-font ovh-font-alarm"></i>
+                        <small>ovh-font-alarm</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="anti-affinity">
+                        <i class="ovh-font ovh-font-anti-affinity"></i>
+                        <small>ovh-font-anti-affinity</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="antiDDoS">
+                        <i class="ovh-font ovh-font-antiDDoS"></i>
+                        <small>ovh-font-antiDDoS</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="arrow-rotate">
+                        <i class="ovh-font ovh-font-arrow-rotate"></i>
+                        <small>ovh-font-arrow-rotate</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="arrow-down">
+                        <i class="ovh-font ovh-font-arrow-down"></i>
+                        <small>ovh-font-arrow-down</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="arrow-left">
+                        <i class="ovh-font ovh-font-arrow-left"></i>
+                        <small>ovh-font-arrow-left</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="arrow-right">
+                        <i class="ovh-font ovh-font-arrow-right"></i>
+                        <small>ovh-font-arrow-right</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="arrow-up">
+                        <i class="ovh-font ovh-font-arrow-up"></i>
+                        <small>ovh-font-arrow-up</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="small-arrow-down">
+                        <i class="ovh-font ovh-font-small-arrow-down"></i>
+                        <small>ovh-font-small-arrow-down</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="small-arrow-right">
+                        <i class="ovh-font ovh-font-small-arrow-right"></i>
+                        <small>ovh-font-small-arrow-right</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="backToV4">
+                        <i class="ovh-font ovh-font-backToV4"></i>
+                        <small>ovh-font-backToV4</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="bin">
+                        <i class="ovh-font ovh-font-bin"></i>
+                        <small>ovh-font-bin</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="bootDisk">
+                        <i class="ovh-font ovh-font-bootDisk"></i>
+                        <small>ovh-font-bootDisk</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="broom">
+                        <i class="ovh-font ovh-font-broom"></i>
+                        <small>ovh-font-broom</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="caddy">
+                        <i class="ovh-font ovh-font-caddy"></i>
+                        <small>ovh-font-caddy</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="cart">
+                        <i class="ovh-font ovh-font-cart"></i>
+                        <small>ovh-font-cart</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="cdn">
+                        <i class="ovh-font ovh-font-cdn"></i>
+                        <small>ovh-font-cdn</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="certificate">
+                        <i class="ovh-font ovh-font-certificate"></i>
+                        <small>ovh-font-certificate</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="check">
+                        <i class="ovh-font ovh-font-check"></i>
+                        <small>ovh-font-check</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="clock">
+                        <i class="ovh-font ovh-font-clock"></i>
+                        <small>ovh-font-clock</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="cloud-desktop">
+                        <i class="ovh-font ovh-font-cloud-desktop"></i>
+                        <small>ovh-font-cloud-desktop</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="cloud-package">
+                        <i class="ovh-font ovh-font-cloud-package"></i>
+                        <small>ovh-font-cloud-package</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="cloud-public2">
+                        <i class="ovh-font ovh-font-cloud-public2"></i>
+                        <small>ovh-font-cloud-public2</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="cloud-root">
+                        <i class="ovh-font ovh-font-cloud-root"></i>
+                        <small>ovh-font-cloud-root</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="cloud">
+                        <i class="ovh-font ovh-font-cloud"></i>
+                        <small>ovh-font-cloud</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="add-disk">
+                        <i class="ovh-font ovh-font-add-disk"></i>
+                        <small>ovh-font-add-disk</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="cloud-disk-array">
+                        <i class="ovh-font ovh-font-cloud-disk-array"></i>
+                        <small>ovh-font-cloud-disk-array</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="cloudcloud">
+                        <i class="ovh-font ovh-font-cloudcloud"></i>
+                        <small>ovh-font-cloudcloud</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="cloudcpu">
+                        <i class="ovh-font ovh-font-cloudcpu"></i>
+                        <small>ovh-font-cloudcpu</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="cloudhdd">
+                        <i class="ovh-font ovh-font-cloudhdd"></i>
+                        <small>ovh-font-cloudhdd</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="cloudram">
+                        <i class="ovh-font ovh-font-cloudram"></i>
+                        <small>ovh-font-cloudram</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="cloudssd">
+                        <i class="ovh-font ovh-font-cloudssd"></i>
+                        <small>ovh-font-cloudssd</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="oldNAS">
+                        <i class="ovh-font ovh-font-oldNAS"></i>
+                        <small>ovh-font-oldNAS</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="veeam">
+                        <i class="ovh-font ovh-font-veeam"></i>
+                        <small>ovh-font-veeam</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="cloudnas">
+                        <i class="ovh-font ovh-font-cloudnas"></i>
+                        <small>ovh-font-cloudnas</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="config">
+                        <i class="ovh-font ovh-font-config"></i>
+                        <small>ovh-font-config</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="consumption">
+                        <i class="ovh-font ovh-font-consumption"></i>
+                        <small>ovh-font-consumption</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="contacts">
+                        <i class="ovh-font ovh-font-contacts"></i>
+                        <small>ovh-font-contacts</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="creditcard">
+                        <i class="ovh-font ovh-font-creditcard"></i>
+                        <small>ovh-font-creditcard</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="database">
+                        <i class="ovh-font ovh-font-database"></i>
+                        <small>ovh-font-database</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="datacenter">
+                        <i class="ovh-font ovh-font-datacenter"></i>
+                        <small>ovh-font-datacenter</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="dedicated-cloud2">
+                        <i class="ovh-font ovh-font-dedicated-cloud2"></i>
+                        <small>ovh-font-dedicated-cloud2</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="dedicatedCloud">
+                        <i class="ovh-font ovh-font-dedicatedCloud"></i>
+                        <small>ovh-font-dedicatedCloud</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="details">
+                        <i class="ovh-font ovh-font-details"></i>
+                        <small>ovh-font-details</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="disclosure-down">
+                        <i class="ovh-font ovh-font-disclosure-down"></i>
+                        <small>ovh-font-disclosure-down</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="disclosure-left">
+                        <i class="ovh-font ovh-font-disclosure-left"></i>
+                        <small>ovh-font-disclosure-left</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="disclosure-right">
+                        <i class="ovh-font ovh-font-disclosure-right"></i>
+                        <small>ovh-font-disclosure-right</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="disclosure-up">
+                        <i class="ovh-font ovh-font-disclosure-up"></i>
+                        <small>ovh-font-disclosure-up</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="docs">
+                        <i class="ovh-font ovh-font-docs"></i>
+                        <small>ovh-font-docs</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="domain">
+                        <i class="ovh-font ovh-font-domain"></i>
+                        <small>ovh-font-domain</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="dots">
+                        <i class="ovh-font ovh-font-dots"></i>
+                        <small>ovh-font-dots</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="download">
+                        <i class="ovh-font ovh-font-download"></i>
+                        <small>ovh-font-download</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="editer">
+                        <i class="ovh-font ovh-font-editer"></i>
+                        <small>ovh-font-editer</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="export-pdf">
+                        <i class="ovh-font ovh-font-export-pdf"></i>
+                        <small>ovh-font-export-pdf</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="failure">
+                        <i class="ovh-font ovh-font-failure"></i>
+                        <small>ovh-font-failure</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="filled-check">
+                        <i class="ovh-font ovh-font-filled-check"></i>
+                        <small>ovh-font-filled-check</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="filled-error">
+                        <i class="ovh-font ovh-font-filled-error"></i>
+                        <small>ovh-font-filled-error</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="filled-info">
+                        <i class="ovh-font ovh-font-filled-info"></i>
+                        <small>ovh-font-filled-info</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="filled-question">
+                        <i class="ovh-font ovh-font-filled-question"></i>
+                        <small>ovh-font-filled-question</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="filled-warning">
+                        <i class="ovh-font ovh-font-filled-warning"></i>
+                        <small>ovh-font-filled-warning</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="filter">
+                        <i class="ovh-font ovh-font-filter"></i>
+                        <small>ovh-font-filter</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="forbidUser">
+                        <i class="ovh-font ovh-font-forbidUser"></i>
+                        <small>ovh-font-forbidUser</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="gauge-full">
+                        <i class="ovh-font ovh-font-gauge-full"></i>
+                        <small>ovh-font-gauge-full</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="graph">
+                        <i class="ovh-font ovh-font-graph"></i>
+                        <small>ovh-font-graph</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="grip">
+                        <i class="ovh-font ovh-font-grip"></i>
+                        <small>ovh-font-grip</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="harddisk">
+                        <i class="ovh-font ovh-font-harddisk"></i>
+                        <small>ovh-font-harddisk</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="harddiskspeed">
+                        <i class="ovh-font ovh-font-harddiskspeed"></i>
+                        <small>ovh-font-harddiskspeed</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="headset">
+                        <i class="ovh-font ovh-font-headset"></i>
+                        <small>ovh-font-headset</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="home">
+                        <i class="ovh-font ovh-font-home"></i>
+                        <small>ovh-font-home</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="hosting">
+                        <i class="ovh-font ovh-font-hosting"></i>
+                        <small>ovh-font-hosting</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="housing">
+                        <i class="ovh-font ovh-font-housing"></i>
+                        <small>ovh-font-housing</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="import-csv">
+                        <i class="ovh-font ovh-font-import-csv"></i>
+                        <small>ovh-font-import-csv</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="info">
+                        <i class="ovh-font ovh-font-info"></i>
+                        <small>ovh-font-info</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="infrastructure">
+                        <i class="ovh-font ovh-font-infrastructure"></i>
+                        <small>ovh-font-infrastructure</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="inprogress">
+                        <i class="ovh-font ovh-font-inprogress"></i>
+                        <small>ovh-font-inprogress</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="internet">
+                        <i class="ovh-font ovh-font-internet"></i>
+                        <small>ovh-font-internet</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="ip">
+                        <i class="ovh-font ovh-font-ip"></i>
+                        <small>ovh-font-ip</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="key">
+                        <i class="ovh-font ovh-font-key"></i>
+                        <small>ovh-font-key</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="lightbulb">
+                        <i class="ovh-font ovh-font-lightbulb"></i>
+                        <small>ovh-font-lightbulb</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="lock">
+                        <i class="ovh-font ovh-font-lock"></i>
+                        <small>ovh-font-lock</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="lockOpened">
+                        <i class="ovh-font ovh-font-lockOpened"></i>
+                        <small>ovh-font-lockOpened</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="mail">
+                        <i class="ovh-font ovh-font-mail"></i>
+                        <small>ovh-font-mail</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="message">
+                        <i class="ovh-font ovh-font-message"></i>
+                        <small>ovh-font-message</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="microphone">
+                        <i class="ovh-font ovh-font-microphone"></i>
+                        <small>ovh-font-microphone</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="microphoneOff">
+                        <i class="ovh-font ovh-font-microphoneOff"></i>
+                        <small>ovh-font-microphoneOff</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="monthly-billing">
+                        <i class="ovh-font ovh-font-monthly-billing"></i>
+                        <small>ovh-font-monthly-billing</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="network">
+                        <i class="ovh-font ovh-font-network"></i>
+                        <small>ovh-font-network</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="newMail">
+                        <i class="ovh-font ovh-font-newMail"></i>
+                        <small>ovh-font-newMail</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="news">
+                        <i class="ovh-font ovh-font-news"></i>
+                        <small>ovh-font-news</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="newtab">
+                        <i class="ovh-font ovh-font-newtab"></i>
+                        <small>ovh-font-newtab</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="noneSpeaker">
+                        <i class="ovh-font ovh-font-noneSpeaker"></i>
+                        <small>ovh-font-noneSpeaker</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="options">
+                        <i class="ovh-font ovh-font-options"></i>
+                        <small>ovh-font-options</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="ovhLogo">
+                        <i class="ovh-font ovh-font-ovhLogo"></i>
+                        <small>ovh-font-ovhLogo</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="page">
+                        <i class="ovh-font ovh-font-page"></i>
+                        <small>ovh-font-page</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="palmTree">
+                        <i class="ovh-font ovh-font-palmTree"></i>
+                        <small>ovh-font-palmTree</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="paperplane">
+                        <i class="ovh-font ovh-font-paperplane"></i>
+                        <small>ovh-font-paperplane</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="pause">
+                        <i class="ovh-font ovh-font-pause"></i>
+                        <small>ovh-font-pause</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="phone">
+                        <i class="ovh-font ovh-font-phone"></i>
+                        <small>ovh-font-phone</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="phoneAlt">
+                        <i class="ovh-font ovh-font-phoneAlt"></i>
+                        <small>ovh-font-phoneAlt</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="pieChart">
+                        <i class="ovh-font ovh-font-pieChart"></i>
+                        <small>ovh-font-pieChart</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="play">
+                        <i class="ovh-font ovh-font-play"></i>
+                        <small>ovh-font-play</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="plus-circle">
+                        <i class="ovh-font ovh-font-plus-circle"></i>
+                        <small>ovh-font-plus-circle</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="print">
+                        <i class="ovh-font ovh-font-print"></i>
+                        <small>ovh-font-print</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="promotion-code-badge">
+                        <i class="ovh-font ovh-font-promotion-code-badge"></i>
+                        <small>ovh-font-promotion-code-badge</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="promotion-code">
+                        <i class="ovh-font ovh-font-promotion-code"></i>
+                        <small>ovh-font-promotion-code</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="public-cloud">
+                        <i class="ovh-font ovh-font-public-cloud"></i>
+                        <small>ovh-font-public-cloud</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="question">
+                        <i class="ovh-font ovh-font-question"></i>
+                        <small>ovh-font-question</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="receipt">
+                        <i class="ovh-font ovh-font-receipt"></i>
+                        <small>ovh-font-receipt</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="scheduled">
+                        <i class="ovh-font ovh-font-scheduled"></i>
+                        <small>ovh-font-scheduled</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="search">
+                        <i class="ovh-font ovh-font-search"></i>
+                        <small>ovh-font-search</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="select-arrow-down">
+                        <i class="ovh-font ovh-font-select-arrow-down"></i>
+                        <small>ovh-font-select-arrow-down</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="server">
+                        <i class="ovh-font ovh-font-server"></i>
+                        <small>ovh-font-server</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="server2">
+                        <i class="ovh-font ovh-font-server2"></i>
+                        <small>ovh-font-server2</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="server3">
+                        <i class="ovh-font ovh-font-server3"></i>
+                        <small>ovh-font-server3</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="server4">
+                        <i class="ovh-font ovh-font-server4"></i>
+                        <small>ovh-font-server4</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="serverSave">
+                        <i class="ovh-font ovh-font-serverSave"></i>
+                        <small>ovh-font-serverSave</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="siteBuilder">
+                        <i class="ovh-font ovh-font-siteBuilder"></i>
+                        <small>ovh-font-siteBuilder</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="sms">
+                        <i class="ovh-font ovh-font-sms"></i>
+                        <small>ovh-font-sms</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="speaker">
+                        <i class="ovh-font ovh-font-speaker"></i>
+                        <small>ovh-font-speaker</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="statutVIP">
+                        <i class="ovh-font ovh-font-statutVIP"></i>
+                        <small>ovh-font-statutVIP</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="stop">
+                        <i class="ovh-font ovh-font-stop"></i>
+                        <small>ovh-font-stop</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="success">
+                        <i class="ovh-font ovh-font-success"></i>
+                        <small>ovh-font-success</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="tasks">
+                        <i class="ovh-font ovh-font-tasks"></i>
+                        <small>ovh-font-tasks</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="SMSEmitting">
+                        <i class="ovh-font ovh-font-SMSEmitting"></i>
+                        <small>ovh-font-SMSEmitting</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="SMSPlanned">
+                        <i class="ovh-font ovh-font-SMSPlanned"></i>
+                        <small>ovh-font-SMSPlanned</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="SMSReceiving">
+                        <i class="ovh-font ovh-font-SMSReceiving"></i>
+                        <small>ovh-font-SMSReceiving</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="abbreviatedNumber">
+                        <i class="ovh-font ovh-font-abbreviatedNumber"></i>
+                        <small>ovh-font-abbreviatedNumber</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="accessories">
+                        <i class="ovh-font ovh-font-accessories"></i>
+                        <small>ovh-font-accessories</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="answeringMachine">
+                        <i class="ovh-font ovh-font-answeringMachine"></i>
+                        <small>ovh-font-answeringMachine</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="callEmitting">
+                        <i class="ovh-font ovh-font-callEmitting"></i>
+                        <small>ovh-font-callEmitting</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="callFilter">
+                        <i class="ovh-font ovh-font-callFilter"></i>
+                        <small>ovh-font-callFilter</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="callForwarding">
+                        <i class="ovh-font ovh-font-callForwarding"></i>
+                        <small>ovh-font-callForwarding</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="callReceiving">
+                        <i class="ovh-font ovh-font-callReceiving"></i>
+                        <small>ovh-font-callReceiving</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="callRestriction">
+                        <i class="ovh-font ovh-font-callRestriction"></i>
+                        <small>ovh-font-callRestriction</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="faxEmitting">
+                        <i class="ovh-font ovh-font-faxEmitting"></i>
+                        <small>ovh-font-faxEmitting</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="faxReceiving">
+                        <i class="ovh-font ovh-font-faxReceiving"></i>
+                        <small>ovh-font-faxReceiving</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="gtr">
+                        <i class="ovh-font ovh-font-gtr"></i>
+                        <small>ovh-font-gtr</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="hashtag">
+                        <i class="ovh-font ovh-font-hashtag"></i>
+                        <small>ovh-font-hashtag</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="lineCommunicating">
+                        <i class="ovh-font ovh-font-lineCommunicating"></i>
+                        <small>ovh-font-lineCommunicating</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="messagesRead">
+                        <i class="ovh-font ovh-font-messagesRead"></i>
+                        <small>ovh-font-messagesRead</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="mobilePhone">
+                        <i class="ovh-font ovh-font-mobilePhone"></i>
+                        <small>ovh-font-mobilePhone</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="nra">
+                        <i class="ovh-font ovh-font-nra"></i>
+                        <small>ovh-font-nra</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="overTheBox">
+                        <i class="ovh-font ovh-font-overTheBox"></i>
+                        <small>ovh-font-overTheBox</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="phoneCall">
+                        <i class="ovh-font ovh-font-phoneCall"></i>
+                        <small>ovh-font-phoneCall</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="programmableKeys">
+                        <i class="ovh-font ovh-font-programmableKeys"></i>
+                        <small>ovh-font-programmableKeys</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="puzzle">
+                        <i class="ovh-font ovh-font-puzzle"></i>
+                        <small>ovh-font-puzzle</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="redirect">
+                        <i class="ovh-font ovh-font-redirect"></i>
+                        <small>ovh-font-redirect</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="remote-control">
+                        <i class="ovh-font ovh-font-remote-control"></i>
+                        <small>ovh-font-remote-control</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="telecom-ethernet">
+                        <i class="ovh-font ovh-font-telecom-ethernet"></i>
+                        <small>ovh-font-telecom-ethernet</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="telecom-modem">
+                        <i class="ovh-font ovh-font-telecom-modem"></i>
+                        <small>ovh-font-telecom-modem</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="telecom-sdsl">
+                        <i class="ovh-font ovh-font-telecom-sdsl"></i>
+                        <small>ovh-font-telecom-sdsl</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="wifi">
+                        <i class="ovh-font ovh-font-wifi"></i>
+                        <small>ovh-font-wifi</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="ticket">
+                        <i class="ovh-font ovh-font-ticket"></i>
+                        <small>ovh-font-ticket</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="transfer-ovh">
+                        <i class="ovh-font ovh-font-transfer-ovh"></i>
+                        <small>ovh-font-transfer-ovh</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="upgrade">
+                        <i class="ovh-font ovh-font-upgrade"></i>
+                        <small>ovh-font-upgrade</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="upload">
+                        <i class="ovh-font ovh-font-upload"></i>
+                        <small>ovh-font-upload</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="user">
+                        <i class="ovh-font ovh-font-user"></i>
+                        <small>ovh-font-user</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="vRack">
+                        <i class="ovh-font ovh-font-vRack"></i>
+                        <small>ovh-font-vRack</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="vps">
+                        <i class="ovh-font ovh-font-vps"></i>
+                        <small>ovh-font-vps</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="wall">
+                        <i class="ovh-font ovh-font-wall"></i>
+                        <small>ovh-font-wall</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="wallet">
+                        <i class="ovh-font ovh-font-wallet"></i>
+                        <small>ovh-font-wallet</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="warning">
+                        <i class="ovh-font ovh-font-warning"></i>
+                        <small>ovh-font-warning</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="wrong">
+                        <i class="ovh-font ovh-font-wrong"></i>
+                        <small>ovh-font-wrong</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="xdsl-adsl">
+                        <i class="ovh-font ovh-font-xdsl-adsl"></i>
+                        <small>ovh-font-xdsl-adsl</small>
+                    </div>
+                    
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="xdsl-vdsl">
+                        <i class="ovh-font ovh-font-xdsl-vdsl"></i>
+                        <small>ovh-font-xdsl-vdsl</small>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <h2>Usage</h2>
+            <pre><code>&lt;i class=&quot;ovh-font ovh-font-<span id="name">name</span>&quot;&gt;&lt;/i&gt;</code></pre>
+            
+        </div>
+
+        <script>
+            (function() {
+
+                function removeClass (elt, className) {
+                    if (!elt) {
+                        return;
+                    }
+                    var classes = elt.className.split(/\s/).filter(function (name) {
+                        return name !== className;
+                    });
+                    elt.className = classes.join(" ");
+                }
+
+                function addClass (elt, className) {
+                    if (!elt) {
+                        return;
+                    }
+                    removeClass(elt, className);
+                    elt.className = elt.className + " " + className;
+                }
+
+                function findIconByName (name) {
+                    var allElements = document.getElementsByClassName('icons-items-default');
+                    for (var i=0; i<allElements.length; i++) {
+                        if (allElements[i].getAttribute('data-name') === name) {
+                            return allElements[i]
+                        }
+                    }
+                    return null;
+                }
+
+                document.getElementById('icons').onclick = function(e) {
+                    e = e || window.event;
+                    var name = e.target.getAttribute('data-name') || e.target.parentNode.getAttribute('data-name');
+                    document.getElementById('name').innerHTML = name;
+                    
+                    var allElements = document.getElementsByClassName('icons-items-default');
+                    for (var i=0; i<allElements.length; i++) {
+                        removeClass(allElements[i], "selected");
+                    }
+                    addClass(findIconByName(name), "selected");
+                };
+
+                document.getElementById('filter').onkeyup = function(e) {
+                    var filterValue = e.target.value;
+                    var allElements = document.getElementsByClassName('icons-items-default');
+                    if (filterValue.length < 2) {
+                        for (var i=0; i<allElements.length; i++) {
+                            removeClass(allElements[i], "hide");
+                        }
+                    } else {
+                        var fitter = new RegExp(filterValue)
+                        for (var i=0; i<allElements.length; i++) {
+                            if (fitter.test(allElements[i].getAttribute('data-name'))) {
+                                removeClass(allElements[i], "hide");
+                            } else {
+                                addClass(allElements[i], "hide");
+                            }
+                        }
+                    }
+                };
+            })();
+        </script>
+    </body>
+</html>

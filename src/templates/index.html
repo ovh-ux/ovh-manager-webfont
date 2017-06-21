@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title><%= fontBaseName %></title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/ovh-font.css">
+        <link rel="stylesheet" href="ovh-font-showcase.css">
+        <style>
+        body {
+            background-color:#2E2633;
+            color:#999292;
+        }
+        h1 {
+            padding: 22px 0;
+        }
+
+        .ovh-font {
+            font-size: 2.3rem;
+        }
+
+        .icons-container {
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            align-items: center;
+        }
+
+        .icons-items-default {
+            padding: 10px;
+            border: 1px solid #eee;
+            display: block;
+            float: left;
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            margin: 5px;
+            transition: all 0.3s ease-out;
+        }
+
+        .icons-items-default i {
+            display: block;
+            text-align: center;
+            padding-top: 20%;
+            color: #FFF;
+            opacity: 1;
+            transition: all 0.3s ease-out;
+        }
+
+        .icons-items-default small {
+            display: block;
+            text-align: center;
+            color: #999292;
+            padding-top: 4px;
+            transition: all;
+            transition: all 0.3s ease-out;
+        }
+
+        .selected,.icons-items-default:hover {
+            cursor: pointer;
+            box-shadow: #ccc 0px 0px 34px;
+            transition: all 0.3s ease-out;
+            transform: scale(1.1);
+        }
+
+        .selected {
+            background-color: #314d77;
+        }
+
+        .icons-items-default:hover small {
+            transition: all 0.3s ease-out;
+            opacity: 0;
+        }
+
+        .icons-items-default:hover i {
+            transition: all 0.3s ease-out;
+            padding-top: 0%;
+            font-size: 6rem;
+        }
+
+        input#filter {
+            margin-bottom: 20px;
+            padding-left: 5px;
+            color: #333;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1><%= fontBaseName %></h1>
+            <input type="text" id="filter" placeholder="filter">
+            <div class="row">
+                <div id="icons" class="icons-container">
+                    <% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { var glyph = glyphs[glyphIdx] %>
+                    <div class="icons-items-default col-xs-12 col-md-4" data-name="<%= glyph %>">
+                        <i class="<%= baseClass %> <%= classPrefix %><%= glyph %>"></i>
+                        <small><%= classPrefix %><%= glyph %></small>
+                    </div>
+                    <% } %>
+                </div>
+            </div>
+
+            <h2>Usage</h2>
+            <pre><code>&lt;i class=&quot;<%= baseClass ? baseClass + ' ' : '' %><%= classPrefix %><span id="name">name</span>&quot;&gt;&lt;/i&gt;</code></pre>
+            <% if (addLigatures) { %>
+            <pre><code>&lt;i class=&quot;ligature-icons&quot;&gt;<span id="name2">name</span>&lt;/i&gt;</code></pre>
+            <% } %>
+        </div>
+
+        <script>
+            (function() {
+
+                function removeClass (elt, className) {
+                    if (!elt) {
+                        return;
+                    }
+                    var classes = elt.className.split(/\s/).filter(function (name) {
+                        return name !== className;
+                    });
+                    elt.className = classes.join(" ");
+                }
+
+                function addClass (elt, className) {
+                    if (!elt) {
+                        return;
+                    }
+                    removeClass(elt, className);
+                    elt.className = elt.className + " " + className;
+                }
+
+                function findIconByName (name) {
+                    var allElements = document.getElementsByClassName('icons-items-default');
+                    for (var i=0; i<allElements.length; i++) {
+                        if (allElements[i].getAttribute('data-name') === name) {
+                            return allElements[i]
+                        }
+                    }
+                    return null;
+                }
+
+                document.getElementById('icons').onclick = function(e) {
+                    e = e || window.event;
+                    var name = e.target.getAttribute('data-name') || e.target.parentNode.getAttribute('data-name');
+                    document.getElementById('name').innerHTML = name;
+                    <% if (addLigatures) { %>document.getElementById('name2').innerHTML = name;<% } %>
+                    var allElements = document.getElementsByClassName('icons-items-default');
+                    for (var i=0; i<allElements.length; i++) {
+                        removeClass(allElements[i], "selected");
+                    }
+                    addClass(findIconByName(name), "selected");
+                };
+
+                document.getElementById('filter').onkeyup = function(e) {
+                    var filterValue = e.target.value;
+                    var allElements = document.getElementsByClassName('icons-items-default');
+                    if (filterValue.length < 2) {
+                        for (var i=0; i<allElements.length; i++) {
+                            removeClass(allElements[i], "hide");
+                        }
+                    } else {
+                        var fitter = new RegExp(filterValue)
+                        for (var i=0; i<allElements.length; i++) {
+                            if (fitter.test(allElements[i].getAttribute('data-name'))) {
+                                removeClass(allElements[i], "hide");
+                            } else {
+                                addClass(allElements[i], "hide");
+                            }
+                        }
+                    }
+                };
+            })();
+        </script>
+    </body>
+</html>
