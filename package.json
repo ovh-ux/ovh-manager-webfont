@@ -1,5 +1,5 @@
 {
-  "name": "ovh-manager-font",
+  "name": "ovh-manager-webfont",
   "version": "1.0.0",
   "description": "Managers font style",
   "main": "./less/fonts/ovh-font.less",
