@@ -4,6 +4,8 @@
 
 ![deprecated](https://img.shields.io/badge/status-deprecated-red.svg)
 
+[![NPM](https://nodei.co/npm/ovh-manager-webfont.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/ovh-manager-webfont/)
+
 To use please import less you want to use on app.less
 
 You can see every available icons in `dist/ovh-font.html`.
