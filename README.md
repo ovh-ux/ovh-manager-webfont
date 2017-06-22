@@ -1,6 +1,6 @@
 # OVH font
 
-![OVH component deprecated](githubBannerDeprecated.png)
+![OVH component deprecated](https://user-images.githubusercontent.com/3379410/27423263-520b94d8-5731-11e7-996a-f8579e70c33b.png)
 
 ![deprecated](https://img.shields.io/badge/status-deprecated-red.svg)
 
