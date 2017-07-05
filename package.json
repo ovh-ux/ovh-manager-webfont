@@ -1,6 +1,6 @@
 {
   "name": "ovh-manager-webfont",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Managers font style",
   "main": "./less/fonts/ovh-font.less",
   "repository": "ovh-ux/ovh-manager-font",

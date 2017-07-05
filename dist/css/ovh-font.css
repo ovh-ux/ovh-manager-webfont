@@ -1,7 +1,7 @@
 @font-face {
   font-family: "ovh-font";
-  src: url('../fonts//ovh-font.eot?0e4af44314d447c03610185eacf6e48e');
-  src: url('../fonts//ovh-font.eot?#iefix') format('embedded-opentype'), url('../fonts//ovh-font.woff2?0e4af44314d447c03610185eacf6e48e') format('woff2'), url('../fonts//ovh-font.woff?0e4af44314d447c03610185eacf6e48e') format('woff'), url('../fonts//ovh-font.ttf?=0e4af44314d447c03610185eacf6e48e') format('truetype'), url('../fonts//ovh-font.svg?0e4af44314d447c03610185eacf6e48e') format('svg');
+  src: url('../fonts//ovh-font.eot?cfd79ae42779ae5fda3d6a070258ba5d');
+  src: url('../fonts//ovh-font.eot?#iefix') format('embedded-opentype'), url('../fonts//ovh-font.woff2?cfd79ae42779ae5fda3d6a070258ba5d') format('woff2'), url('../fonts//ovh-font.woff?cfd79ae42779ae5fda3d6a070258ba5d') format('woff'), url('../fonts//ovh-font.ttf?=cfd79ae42779ae5fda3d6a070258ba5d') format('truetype'), url('../fonts//ovh-font.svg?cfd79ae42779ae5fda3d6a070258ba5d') format('svg');
   font-weight: normal;
   font-style: normal;
 }
