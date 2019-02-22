@@ -1,7 +1,7 @@
 @font-face {
   font-family: "ovh-font";
-  src: url('../fonts//ovh-font.eot?4bd9d1071ff0bed00626acc137648455');
-  src: url('../fonts//ovh-font.eot?#iefix') format('embedded-opentype'), url('../fonts//ovh-font.woff2?4bd9d1071ff0bed00626acc137648455') format('woff2'), url('../fonts//ovh-font.woff?4bd9d1071ff0bed00626acc137648455') format('woff'), url('../fonts//ovh-font.ttf?=4bd9d1071ff0bed00626acc137648455') format('truetype'), url('../fonts//ovh-font.svg?4bd9d1071ff0bed00626acc137648455') format('svg');
+  src: url('../fonts//ovh-font.eot?cdfb8c1d32fc9c0529ed7184300c028a');
+  src: url('../fonts//ovh-font.eot?#iefix') format('embedded-opentype'), url('../fonts//ovh-font.woff2?cdfb8c1d32fc9c0529ed7184300c028a') format('woff2'), url('../fonts//ovh-font.woff?cdfb8c1d32fc9c0529ed7184300c028a') format('woff'), url('../fonts//ovh-font.ttf?=cdfb8c1d32fc9c0529ed7184300c028a') format('truetype'), url('../fonts//ovh-font.svg?cdfb8c1d32fc9c0529ed7184300c028a') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -271,269 +271,272 @@
 .ovh-font-key:before {
   content: "\f154";
 }
-.ovh-font-lightbulb:before {
+.ovh-font-kubernetes:before {
   content: "\f155";
 }
-.ovh-font-lock:before {
+.ovh-font-lightbulb:before {
   content: "\f156";
 }
-.ovh-font-lockOpened:before {
+.ovh-font-lock:before {
   content: "\f157";
 }
-.ovh-font-mail:before {
+.ovh-font-lockOpened:before {
   content: "\f158";
 }
-.ovh-font-message:before {
+.ovh-font-mail:before {
   content: "\f159";
 }
-.ovh-font-microphone:before {
+.ovh-font-message:before {
   content: "\f15a";
 }
-.ovh-font-microphoneOff:before {
+.ovh-font-microphone:before {
   content: "\f15b";
 }
-.ovh-font-monthly-billing:before {
+.ovh-font-microphoneOff:before {
   content: "\f15c";
 }
-.ovh-font-network:before {
+.ovh-font-monthly-billing:before {
   content: "\f15d";
 }
-.ovh-font-newMail:before {
+.ovh-font-network:before {
   content: "\f15e";
 }
-.ovh-font-news:before {
+.ovh-font-newMail:before {
   content: "\f15f";
 }
-.ovh-font-newtab:before {
+.ovh-font-news:before {
   content: "\f160";
 }
-.ovh-font-noneSpeaker:before {
+.ovh-font-newtab:before {
   content: "\f161";
 }
-.ovh-font-options:before {
+.ovh-font-noneSpeaker:before {
   content: "\f162";
 }
-.ovh-font-ovhLogo:before {
+.ovh-font-options:before {
   content: "\f163";
 }
-.ovh-font-page:before {
+.ovh-font-ovhLogo:before {
   content: "\f164";
 }
-.ovh-font-palmTree:before {
+.ovh-font-page:before {
   content: "\f165";
 }
-.ovh-font-paperplane:before {
+.ovh-font-palmTree:before {
   content: "\f166";
 }
-.ovh-font-pause:before {
+.ovh-font-paperplane:before {
   content: "\f167";
 }
-.ovh-font-phone:before {
+.ovh-font-pause:before {
   content: "\f168";
 }
-.ovh-font-phoneAlt:before {
+.ovh-font-phone:before {
   content: "\f169";
 }
-.ovh-font-pieChart:before {
+.ovh-font-phoneAlt:before {
   content: "\f16a";
 }
-.ovh-font-play:before {
+.ovh-font-pieChart:before {
   content: "\f16b";
 }
-.ovh-font-plus-circle:before {
+.ovh-font-play:before {
   content: "\f16c";
 }
-.ovh-font-print:before {
+.ovh-font-plus-circle:before {
   content: "\f16d";
 }
-.ovh-font-promotion-code-badge:before {
+.ovh-font-print:before {
   content: "\f16e";
 }
-.ovh-font-promotion-code:before {
+.ovh-font-promotion-code-badge:before {
   content: "\f16f";
 }
-.ovh-font-public-cloud:before {
+.ovh-font-promotion-code:before {
   content: "\f170";
 }
-.ovh-font-question:before {
+.ovh-font-public-cloud:before {
   content: "\f171";
 }
-.ovh-font-receipt:before {
+.ovh-font-question:before {
   content: "\f172";
 }
-.ovh-font-scheduled:before {
+.ovh-font-receipt:before {
   content: "\f173";
 }
-.ovh-font-search:before {
+.ovh-font-scheduled:before {
   content: "\f174";
 }
-.ovh-font-select-arrow-down:before {
+.ovh-font-search:before {
   content: "\f175";
 }
-.ovh-font-server:before {
+.ovh-font-select-arrow-down:before {
   content: "\f176";
 }
-.ovh-font-server2:before {
+.ovh-font-server:before {
   content: "\f177";
 }
-.ovh-font-server3:before {
+.ovh-font-server2:before {
   content: "\f178";
 }
-.ovh-font-server4:before {
+.ovh-font-server3:before {
   content: "\f179";
 }
-.ovh-font-serverSave:before {
+.ovh-font-server4:before {
   content: "\f17a";
 }
-.ovh-font-siteBuilder:before {
+.ovh-font-serverSave:before {
   content: "\f17b";
 }
-.ovh-font-sms:before {
+.ovh-font-siteBuilder:before {
   content: "\f17c";
 }
-.ovh-font-speaker:before {
+.ovh-font-sms:before {
   content: "\f17d";
 }
-.ovh-font-splittedArrows:before {
+.ovh-font-speaker:before {
   content: "\f17e";
 }
-.ovh-font-statutVIP:before {
+.ovh-font-splittedArrows:before {
   content: "\f17f";
 }
-.ovh-font-stop:before {
+.ovh-font-statutVIP:before {
   content: "\f180";
 }
-.ovh-font-success:before {
+.ovh-font-stop:before {
   content: "\f181";
 }
-.ovh-font-tasks:before {
+.ovh-font-success:before {
   content: "\f182";
 }
-.ovh-font-SMSEmitting:before {
+.ovh-font-tasks:before {
   content: "\f183";
 }
-.ovh-font-SMSPlanned:before {
+.ovh-font-SMSEmitting:before {
   content: "\f184";
 }
-.ovh-font-SMSReceiving:before {
+.ovh-font-SMSPlanned:before {
   content: "\f185";
 }
-.ovh-font-abbreviatedNumber:before {
+.ovh-font-SMSReceiving:before {
   content: "\f186";
 }
-.ovh-font-accessories:before {
+.ovh-font-abbreviatedNumber:before {
   content: "\f187";
 }
-.ovh-font-answeringMachine:before {
+.ovh-font-accessories:before {
   content: "\f188";
 }
-.ovh-font-callEmitting:before {
+.ovh-font-answeringMachine:before {
   content: "\f189";
 }
-.ovh-font-callFilter:before {
+.ovh-font-callEmitting:before {
   content: "\f18a";
 }
-.ovh-font-callForwarding:before {
+.ovh-font-callFilter:before {
   content: "\f18b";
 }
-.ovh-font-callReceiving:before {
+.ovh-font-callForwarding:before {
   content: "\f18c";
 }
-.ovh-font-callRestriction:before {
+.ovh-font-callReceiving:before {
   content: "\f18d";
 }
-.ovh-font-faxEmitting:before {
+.ovh-font-callRestriction:before {
   content: "\f18e";
 }
-.ovh-font-faxReceiving:before {
+.ovh-font-faxEmitting:before {
   content: "\f18f";
 }
-.ovh-font-gtr:before {
+.ovh-font-faxReceiving:before {
   content: "\f190";
 }
-.ovh-font-hashtag:before {
+.ovh-font-gtr:before {
   content: "\f191";
 }
-.ovh-font-lineCommunicating:before {
+.ovh-font-hashtag:before {
   content: "\f192";
 }
-.ovh-font-messagesRead:before {
+.ovh-font-lineCommunicating:before {
   content: "\f193";
 }
-.ovh-font-mobilePhone:before {
+.ovh-font-messagesRead:before {
   content: "\f194";
 }
-.ovh-font-nra:before {
+.ovh-font-mobilePhone:before {
   content: "\f195";
 }
-.ovh-font-overTheBox:before {
+.ovh-font-nra:before {
   content: "\f196";
 }
-.ovh-font-phoneCall:before {
+.ovh-font-overTheBox:before {
   content: "\f197";
 }
-.ovh-font-programmableKeys:before {
+.ovh-font-phoneCall:before {
   content: "\f198";
 }
-.ovh-font-puzzle:before {
+.ovh-font-programmableKeys:before {
   content: "\f199";
 }
-.ovh-font-redirect:before {
+.ovh-font-puzzle:before {
   content: "\f19a";
 }
-.ovh-font-remote-control:before {
+.ovh-font-redirect:before {
   content: "\f19b";
 }
-.ovh-font-telecom-ethernet:before {
+.ovh-font-remote-control:before {
   content: "\f19c";
 }
-.ovh-font-telecom-modem:before {
+.ovh-font-telecom-ethernet:before {
   content: "\f19d";
 }
-.ovh-font-telecom-sdsl:before {
+.ovh-font-telecom-modem:before {
   content: "\f19e";
 }
-.ovh-font-wifi:before {
+.ovh-font-telecom-sdsl:before {
   content: "\f19f";
 }
-.ovh-font-ticket:before {
+.ovh-font-wifi:before {
   content: "\f1a0";
 }
-.ovh-font-transfer-ovh:before {
+.ovh-font-ticket:before {
   content: "\f1a1";
 }
-.ovh-font-upgrade:before {
+.ovh-font-transfer-ovh:before {
   content: "\f1a2";
 }
-.ovh-font-upload:before {
+.ovh-font-upgrade:before {
   content: "\f1a3";
 }
-.ovh-font-user:before {
+.ovh-font-upload:before {
   content: "\f1a4";
 }
-.ovh-font-vRack:before {
+.ovh-font-user:before {
   content: "\f1a5";
 }
-.ovh-font-vps:before {
+.ovh-font-vRack:before {
   content: "\f1a6";
 }
-.ovh-font-wall:before {
+.ovh-font-vps:before {
   content: "\f1a7";
 }
-.ovh-font-wallet:before {
+.ovh-font-wall:before {
   content: "\f1a8";
 }
-.ovh-font-warning:before {
+.ovh-font-wallet:before {
   content: "\f1a9";
 }
-.ovh-font-wrong:before {
+.ovh-font-warning:before {
   content: "\f1aa";
 }
-.ovh-font-xdsl-adsl:before {
+.ovh-font-wrong:before {
   content: "\f1ab";
 }
-.ovh-font-xdsl-vdsl:before {
+.ovh-font-xdsl-adsl:before {
   content: "\f1ac";
+}
+.ovh-font-xdsl-vdsl:before {
+  content: "\f1ad";
 }
 .ovh-font.ovh-font-2x {
   font-size: 2em;
