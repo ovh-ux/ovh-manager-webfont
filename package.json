@@ -13,7 +13,7 @@
     "gulp-consolidate": "^0.1.2",
     "gulp-iconfont": "^2.0.0",
     "gulp-iconfont-css": "0.0.9",
-    "lodash": "^3.9.3",
+    "lodash": "^4.17.19",
     "matchdep": "^0.3.0",
     "grunt-webfont": "^1.0.0"
   }
