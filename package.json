@@ -8,7 +8,7 @@
     "grunt": "0.4.x",
     "grunt-bump": "0.3.1",
     "grunt-contrib-less": "^1.0.1",
-    "grunt-gulp": "^0.1.0",
+    "grunt-gulp": "^1.0.2",
     "gulp": "^3.9.0",
     "gulp-consolidate": "^0.1.2",
     "gulp-iconfont": "^2.0.0",
